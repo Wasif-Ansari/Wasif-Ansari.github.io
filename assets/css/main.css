@@ -1,6 +1,20 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+@-webkit-keyframes glow {
+	from {
+	 color: #4cc4ec;
+   text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+ }
+ 
+ to {
+	color: whitesmoke;
+   text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+ }
+}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -208,7 +222,7 @@ input, select, textarea {
 /* Container */
 
 	.two .container .last{
-		color: black;
+		color: #4cc4ec;
 		font-weight: 400;
 
 	}
@@ -216,11 +230,20 @@ input, select, textarea {
 	.two .container h2 , .three .container h2 ,
 	.four .container h2{
 		font-weight: bold;
-		color: black;
+		color: white;
+	}
+	.four .container h3{
+		font-weight: bold;
+		color: white;
+	}
+	.four .container h3 b{
+		font-size: 80px;
+		font-weight: bold;
+		color: #4cc4ec;
 	}
 
 	.three .container p{
-		color: black;
+		color:white;
 	}
 
 	.container {
@@ -1902,7 +1925,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			box-shadow: 0 0 2px 1px #8ebebc;
+			box-shadow: 0 0 2px 1px #4cc4ec;
 			background: #fff;
 		}
 
@@ -1981,7 +2004,7 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #4cc4ec;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1999,7 +2022,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: darkblue;
 		}
 
 		input[type="button"]:active,
@@ -2007,7 +2030,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #ea7f45;
+			background-color: black;
 		}
 
 /* Item */
@@ -2290,27 +2313,31 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner4.jpg");
-				color: black;
+				background-color: darkblue;
+				background-image: url("../../images/banner9.png");
+				color: whitesmoke;
 				font-weight: 1000;
 			}
 			#main > section.one strong{
-				color:black;
-				font-size: larger;
+				font-size: 6rem;
+				font-family:  "Codystar" monospace;
 				font-weight: bold;
+				-webkit-animation: glow 2s ease-in-out infinite alternate;
+				-moz-animation: glow 2s ease-in-out infinite alternate;
+				animation: glow 2s ease-in-out infinite alternate;
+				padding: 1%;
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: black;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: black;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: black;
 			}
 
 /* Wide */
