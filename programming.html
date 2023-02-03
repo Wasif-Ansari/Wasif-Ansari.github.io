@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    
+    body {
+    background-color: black;
+    background-image: url("images/banner11.jpg");
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    padding: 2%;
+    transform: none;
+    display: inline-flex row;
+    align-items: center;
+    align-content: center;
+    font-size: 30px;
+    }
+
+
+    .skillsGrid{
+        align-items: center;
+        padding: 5%;
+        transform: none;
+    }
+    img{
+        padding-top: 6%;
+        padding-right: 4%;
+        transform: none;
+    }
+    .skillsGrid .text:hover{
+        color: #4cc4ec;
+        filter: drop-shadow(0 0 20px #4cc4ec);
+        transform: none;
+
+    }
+    #text{
+        text-align: center;
+        transform: none;
+
+    }
+    #text:hover{
+        color: #4cc4ec;
+        filter: drop-shadow(0 0 20px #4cc4ec);
+        transform: none;
+
+    }
+    .skillsGrid .languages :hover{
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px #4cc4ec);
+        transform: none;
+        transition: 0.3s ease-in-out;
+    }
+    .skillsGrid .platforms :hover{
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px #4cc4ec);
+        transform: none;
+        transition: 0.3s ease-in-out;
+    }
+    .skillsGrid .third :hover{
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px #4cc4ec);
+        transform: none;
+        transition: 0.3s ease-in-out;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROOGRAMMING</title>
+    <title>COMPETITIVE PROGRAMMING</title>
+    
 </head>
 <body>
-    
+    <div id="space">
+    <h1 id="text">COMPETITIVE PROGRAMMING </h1>
+    <div class="skillsGrid">
+        <h1 class="text">PLATFORMS</h1>
+        <div class="platforms">
+        <a href="https://leetcode.com/MWA_CODER/">
+            <img class="images" src="images/leet.png" width="300px" height="300px" alt="The logo icon for Leetcode" title="Leetcode"></a>
+        <a href="https://www.hackerrank.com/MWA_CODER">
+            <img class="images" src="images/hackerrank.png" width="300px" height="300px" alt="The logo icon for HackerRank" title="HackerRank"></a>
+        <a href="#">
+            <img class="images" src="images/cc-logo.svg" width="300px" height="300px" alt="The logo icon for Codechef" title="Codechef"></a>
+        </div>
+        <h1 class="text">LANGUAGES</h1>
+        <div class="languages">
+        <img class="images" src="images/python_icon.png" width="300px" height="300px" alt="The logo icon for python" title="Python">
+        <img class="images" src="images/c++.png" width="300px" height="300px" alt="The logo icon for C++" title="C++">
+        <img class="images" src="images/c.png" width="300px" height="300px" alt="The logo icon for C" title="C">        </div>
+        
+    </div>
 </body>
 </html>
